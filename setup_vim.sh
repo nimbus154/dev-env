@@ -24,9 +24,9 @@ syntax on
 filetype plugin indent on
 
 set nu ruler tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab modeline ls=2 fdm=indent
-au Filetype haskell set expandtab 
+au Filetype haskell set expandtab
 au BufNewFile,BufRead *.cljs setlocal ft=cl
-autocmd BufWritePre *.js, *.hs, *.cl, *.cljs :%s/\s\+$//e \" strip trailing whitespace from js files
+autocmd FileType haskell,javascript,clojure autocmd BufWritePre * :%s/\s\+$//e \" strip trailing whitespace from js files
 colorscheme jellybeans
 
 let jshint2_save = 1 \" run jshint on save
