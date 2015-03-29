@@ -2,24 +2,22 @@
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl 'www.vim.org/scripts/download_script.php?src_id=19375' > ~/.vim/autoload/pathogen.vim
 
-VIM_DIR=~/.vim/bundle/
-git clone https://github.com/bling/vim-airline $VIM_DIR # fancy toolbar
-git clone https://github.com/tpope/vim-surround $VIM_DIR # surrounding text options
-git clone https://github.com/tomtom/tcomment_vim $VIM_DIR # comments
-git clone https://github.com/scrooloose/nerdtree $VIM_DIR # file tree
-git clone https://github.com/tpope/vim-fugitive $VIM_DIR # git
-git clone https://github.com/ervandew/supertab $VIM_DIR # tab completion
-git clone https://github.com/kien/ctrlp.vim $VIM_DIR # Sublime-style open anything
+VIM_DIR=~/.vim/bundle
+git clone https://github.com/bling/vim-airline $VIM_DIR/vim-airline # fancy toolbar
+git clone https://github.com/tpope/vim-surround $VIM_DIR/vim-surround # surrounding text options
+git clone https://github.com/tomtom/tcomment_vim $VIM_DIR/tcomment_vim # comments
+git clone https://github.com/ervandew/supertab $VIM_DIR/supertab # tab completion
+git clone https://github.com/kien/ctrlp.vim $VIM_DIR/ctrlp.vim # Sublime-style open anything
 
 # JS
-git clone https://github.com/Shutnik/jshint2.vim $VIM_DIR # js hint
-git clone https://github.com/heavenshell/vim-jsdoc $VIM_DIR # doc blocks
+git clone https://github.com/Shutnik/jshint2.vim $VIM_DIR/jshint2.vim # js hint
+git clone https://github.com/heavenshell/vim-jsdoc $VIM_DIR/vim-jsdoc # doc blocks
 
 # syntax and color schemes
-git clone https://github.com/kchmck/vim-coffee-script.git $VIM_DIR # coffee-script
-git clone https://github.com/digitaltoad/vim-jade $VIM_DIR # jade
-git clone https://github.com/nanotech/jellybeans.vim $VIM_DIR # current colorscheme
-git clone https://github.com/elzr/vim-json $VIM_DIR # JSON
+git clone https://github.com/kchmck/vim-coffee-script.git $VIM_DIR/vim-coffee-script # coffee-script
+git clone https://github.com/digitaltoad/vim-jade $VIM_DIR/vim-jade # jade
+git clone https://github.com/nanotech/jellybeans.vim $VIM_DIR/jellybeans.vim # current colorscheme
+git clone https://github.com/elzr/vim-json $VIM_DIR/vim-json # JSON
 
 VIMRC="call pathogen#infect()
 syntax on
@@ -38,4 +36,4 @@ let jsdoc_input_description = 1 \" prompt for function description
 \" enable powerline symbols
 let g:airline_powerline_fonts = 1"
 
-echo "$VIMRC" >> test_vimrc
+echo "$VIMRC" >> ~/.vimrc
