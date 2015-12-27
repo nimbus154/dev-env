@@ -1,0 +1,2 @@
+#! /bin/bash
+docker run --rm -a stdout -a stderr -i -v /Users/chad.wyszynski:/Users/chad.wyszynski -w `pwd` mhart/alpine-node:$NODE_VERSION npm $@

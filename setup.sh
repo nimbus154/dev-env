@@ -11,4 +11,8 @@
 cat ./zshrc >> ~/.zshrc
 cat ./tmux.conf >> ~/.tmux.conf
 
+# move docker program aliases
+mkdir -p ~/bin
+cp ./bin/* ~/bin
+
 ./setup_vim.sh
