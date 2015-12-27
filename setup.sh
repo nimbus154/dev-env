@@ -8,7 +8,7 @@
 # apt-cyg install tmux, vim
 # pacman -S tmux, vim
 
-cat ./bashrc >> ~/.bashrc
+cat ./zshrc >> ~/.zshrc
 cat ./tmux.conf >> ~/.tmux.conf
 
 ./setup_vim.sh
