@@ -8,11 +8,13 @@
 # apt-cyg install tmux, vim
 # pacman -S tmux, vim
 
-cat ./zshrc >> ~/.zshrc
+cat ./bash_profile >> ~/.bashrc
 cat ./tmux.conf >> ~/.tmux.conf
+cat ./vimrc >> ~/.vimrc
+
+mkdir ~/.bash
+cp git-* ~/.bash
 
 # move docker program aliases
 mkdir -p ~/bin
 cp ./bin/* ~/bin
-
-./setup_vim.sh
