@@ -173,3 +173,6 @@ export LSCOLORS="$(get_ls_colors)"
 # aliases
 alias dc="docker-compose"
 alias ls="ls -G"
+
+export PATH="$HOME/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
