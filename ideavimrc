@@ -1,0 +1,39 @@
+set tags=./tags,tags
+set nocompatible
+set modelines=0
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+set encoding=utf-8
+set scrolloff=3
+set autoindent
+set showmode
+set showcmd
+set ruler
+set wildmenu
+set wildmode=list:longest
+set visualbell
+set ttyfast
+set backspace=indent,eol,start
+set laststatus=2
+set nu
+set relativenumber
+set cursorline
+set foldmethod=indent
+
+let mapleader = ","
+
+set ignorecase
+set smartcase
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <silent><leader><space> :noh<CR>
+
+set wrap
+set textwidth=121
+set formatoptions=qrn1
+set colorcolumn=121
